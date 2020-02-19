@@ -2,3 +2,98 @@
 #f0fff3 main
 #c6f1e7 footer
 #fa4659 text */
+body {
+  color: #fa4659;
+  text-align: center;
+}
+
+/* sections */
+.header {
+  background-color: #11cbd7;
+  padding: 2% 3% 2% 3%;
+  text-align: left;
+}
+
+.main {
+  background-color: #f0fff3;
+  padding: 5% 3% 5% 3%;
+}
+
+.footer {
+  background-color: #c6f1e7;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  color: #11cbd7;
+}
+
+/* Text */
+h1 {
+  font-family: 'Luckiest Guy';
+  font-size: 8.5rem;
+  padding-top: 16%;
+}
+
+.introtext {
+  padding-top: 30%;
+  font-family: 'roboto';
+  font-size: 1.5rem;
+}
+
+.copy {
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  padding-top: 0.5%;
+}
+
+.instructions {
+  font-family: 'roboto';
+  font-size: 1.5rem;
+  padding-bottom: 3%;
+}
+
+
+
+/* social media */
+.sm:hover {
+  color: #fa4659;
+}
+.sm {
+  padding-left: 1%;
+  color: #11cbd7;
+}
+
+/* game */
+.section {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.btn {
+  color: #fa4659;
+  border-color: #fa4659;
+}
+
+.btn:hover {
+  background-color: #11cbd7;
+  color: #f0fff3;
+  border-color: #fa4659;
+}
+
+.btn2 {
+  margin: 3% 1%;
+  background-color: #fa4659;
+  border-color: #fa4629;
+  color: #f0fff3;
+}
+
+.btn2:hover {
+  background-color: #fa1009;
+  border-color: #fa4629;
+  color: #f0fff3;
+}
+
+.btn2:active:focus {
+  background-color: #11cbd7 !important;
+  border-color: #fa4659 !important;
+}

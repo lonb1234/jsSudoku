@@ -1,144 +1,171 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>js Sudoku</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- fontawesome -->
-<script src="https://kit.fontawesome.com/68597ed662.js" crossorigin="anonymous"></script>
-<!-- google fonts -->
-<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans|Roboto&display=swap" rel="stylesheet">
 
-<!-- CSS -->
-<link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  <div class="Header">
-        <h1>js Sudoku</h1>
-        <img src="images/sudoku.png" alt="sudoku">
+<head>
+  <meta charset="utf-8">
+  <title>js Sudoku</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/68597ed662.js" crossorigin="anonymous"></script>
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-5">
+          <h1>js Sudoku</h1>
+        </div>
+
+        <div class="col-lg-2">
+          <h2 class="introtext">A javascript sudoku game. Fill every line with the numbers from 1 to 10. A number can only occur once horizontal, vertical, diagonal and in a square.</h2>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+        <div class="col-lg-2">
+          <img src="images/sudoku.png" alt="sudoku" class="sudo">
+        </div>
+        <div class="col-lg-1">
+        </div>
+      </div>
+    </div>
   </div>
-<div class="main">
+
+  <div class="main">
+
+    <!-- still needs columns!!! -->
+    <h3>Press new game to start a new game</h3>
+    <p class="instructions">Get all numbers from 1-10 in every row and line + diagonal + square
+      a number should only occur once in every line/row/diagonal/square</p>
+
+      <!-- game -->
+    <div class="section sec1">
+      <!-- div row row row -->
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+    <div class="section">
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+      <button type="button" class="btn btn-lg btn-outline-dark" name="button">0</button>
+    </div>
+
+    <!-- non game buttons -->
+    <button type="button" class="btn2 btn-primary btn-lg">New Game</button>
+    <button type="button" class="btn2 btn-primary btn-lg">Reset</button>
+
+  </div>
+
+  <div class="footer">
+
+    <a class="sm" href="http://www.twitter.com"><i class="fab fa-twitter fa-2x s1"></i></a>
+    <a class="sm" href="http://www.facebook.com"><i class="fab fa-facebook fa-2x s1"></i></a>
+    <a class="sm" href="http://www.linkedin.com"> <i class="fab fa-linkedin-in fa-2x s1"></i></a>
+    <a class="sm" href="baozi@thecat.com"><i class="fas fa-envelope fa-2x s1"></i></a>
+    <p class="copy">Copyright 2020 blablabla</p>
 
 
-  <p>Press new game to start a new game</p>
-<p>Get all numbers from 1-10 in every row and line + diagonal + square
-a number should only occur once in every line/row/diagonal/square</p>
-<div class="section1">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section2">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section3">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section4">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section5">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section6">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section7">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section8">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
-<div class="section9">
-  <button type="button" name="button"></button>
-    <button type="button" name="button"></button>
-      <button type="button" name="button"></button>
-        <button type="button" name="button"></button>
-          <button type="button" name="button"></button>
-            <button type="button" name="button"></button>
-              <button type="button" name="button"></button>
-                <button type="button" name="button"></button>
-                  <button type="button" name="button"></button>
-</div>
+  </div>
+  <script src="index.js" charset="utf-8"></script>
+</body>
 
-
-</div>
-
-<div class="footer">
-
-  <a class ="sm" href="http://www.twitter.com"><i class="fab fa-twitter fa-2x s1"></i></a>
-  <a class ="sm" href="http://www.facebook.com"><i class="fab fa-facebook fa-2x s1"></i></a>
-<a class ="sm" href="http://www.linkedin.com">  <i class="fab fa-linkedin-in fa-2x s1"></i></a>
-  <a class ="sm" href="baozi@thecat.com"><i class="fas fa-envelope fa-2x s1"></i></a>
-  <p>Copyright 2020 blablabla</p>
-
-
-</div>
-      <script src="index.js" charset="utf-8"></script>
-  </body>
 </html>
