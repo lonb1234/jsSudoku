@@ -97,3 +97,12 @@ h1 {
   background-color: #11cbd7 !important;
   border-color: #fa4659 !important;
 }
+
+
+.dropdown-item:hover{
+  background-color: #11cbd7
+}
+
+.dropdown-toggle::after {
+            content: none;
+        } 
