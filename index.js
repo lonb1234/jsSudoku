@@ -1,16 +1,3 @@
-// sudoku clicks
-
-point = 0
-document.querySelector('#b1').addEventListener("click", function() {
-  if (point < 9) {
-    point++
-  } else {
-    point = 1
-  };
-  document.querySelector('#b1').innerHTML = point;
-});
-
-
 
 
 // new Game
@@ -24,3 +11,15 @@ document.querySelector('.new').addEventListener("click", function() {
 document.querySelector('.reset').addEventListener("click", function() {
   document.querySelector('.btn-outline-dark').innerHTML = '0'
 });
+
+// button functionality
+function sudobuttons(){
+  if (event.target.value<9){
+    event.target.value++;
+    event.target.innerHTML=event.target.value;
+  }
+else{
+  event.target.value=1;
+  event.target.innerHTML=event.target.value;
+}
+};
