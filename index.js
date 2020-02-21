@@ -1,14 +1,16 @@
 // new Game
 // need to add random numbers to it later!
-document.querySelector('.new').addEventListener("click", function() {
-  document.querySelector('.btn-outline-dark').innerHTML = '0'
-});
 
-// reset
-//temporary!, reset to original settings!
-document.querySelector('.reset').addEventListener("click", function() {
-  document.querySelector('.btn-outline-dark').innerHTML = '0'
-});
+function newg(){
+    $( ":button" ).value='0'
+    $( ":button" ).innerHTML = '0'
+}
+
+function reset(){
+    document.querySelectorAll[1]('.btn-outline-dark').value = '0'
+    document.querySelectorAll[1]('.btn-outline-dark').innerHTML = '0'
+}
+
 
 // button functionality
 function sudobuttons() {
