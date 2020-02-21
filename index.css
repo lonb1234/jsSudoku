@@ -12,7 +12,7 @@ body {
   background-color: #11cbd7;
   padding: 2% 3% 2% 3%;
   text-align: left;
-  color:#c6f1e7 ;
+  color: #c6f1e7;
 }
 
 .main {
@@ -33,8 +33,9 @@ h1 {
   font-size: 8.5rem;
   padding-top: 16%;
 }
-h1:hover{
-  color: #f0fff3 ;
+
+h1:hover {
+  color: #f0fff3;
 }
 
 .introtext {

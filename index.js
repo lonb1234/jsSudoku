@@ -1,5 +1,3 @@
-
-
 // new Game
 // need to add random numbers to it later!
 document.querySelector('.new').addEventListener("click", function() {
@@ -13,13 +11,12 @@ document.querySelector('.reset').addEventListener("click", function() {
 });
 
 // button functionality
-function sudobuttons(){
-  if (event.target.value<9){
+function sudobuttons() {
+  if (event.target.value < 9) {
     event.target.value++;
-    event.target.innerHTML=event.target.value;
+    event.target.innerHTML = event.target.value;
+  } else {
+    event.target.value = 1;
+    event.target.innerHTML = event.target.value;
   }
-else{
-  event.target.value=1;
-  event.target.innerHTML=event.target.value;
-}
 };
